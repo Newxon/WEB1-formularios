@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Videojuegos</h1>
+
+    <form action="index.js" method="post">
+        <fieldset>
+            <legend><strong>Datos personales</strong></legend>
+
+            <label for="Nombreid">Nombre</label>
+            <input type="text" name="Nombre" id="Nombreid" required>
+
+            <label for="Apellidoid">Apellido</label>
+            <input type="text" name="Apellido" id="Apellidoid" required>
+
+            <label for="Emailid">Email</label>
+            <input type="email" name="Email" id="Emailid" required>
+
+            <label for="Naciid">Fecha de nacimiento</label>
+            <input type="date" name="Nacimiento" id="Naciid" required>
+
+            <label for="DNIid">DNI</label>
+            <input type="number" name="DNI" id="DNIid" required>
+
+            <label for="Telid">Número de teléfono</label>
+            <input type="tel" name="Tel" id="Telid" required>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>Ubicación</strong></legend>
+
+            <label for="Provinciaid">Provincia</label>
+            <select name="Provincia" id="Provinciaid" required>
+                <option value="">Seleccionar...</option>
+                <option value="BA">Buenos Aires</option>
+                <option value="CABA">Ciudad autónoma de Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Cordoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="ER">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="LP">La Pampa</option>
+                <option value="LR">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquén</option>
+                <option value="RN">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="SJ">San Juan</option>
+                <option value="SanLuis">San Luis</option>
+                <option value="SC">Santa Cruz</option>
+                <option value="SF">Santa Fe</option>
+                <option value="SE">Santiago del Estero</option>
+                <option value="TF">Tierra del Fuego</option>
+                <option value="Tucu">Tucúman</option>
+            </select>
+
+            <label for="Ciudadid">Ciudad</label>
+            <input type="text" name="Ciudad" id="Ciudadid" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><Strong>Redes Sociales</Strong></legend>
+
+            <label for="Xid">Usuario de <img src="assets/img/X.jpeg" alt="Logo de X" width="25px"></label>
+            <input type="text" name="X" id="Xid">
+
+            <label for="Igid">Usuario de <img src="assets/img/Instagram_logo_2022.svg.png" alt="Logo de Instagram"
+                    width="25px"></label>
+            <input type="text" name="Ig" id="Igid">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>¿Que juegos has probado?</strong></legend>
+
+            <label for="Mineid">Minecraft</label>
+            <input type="checkbox" name="Mine" id="Mineid">
+
+            <label for="Robloxid">Roblox</label>
+            <input type="checkbox" name="Roblox" id="Robloxid">
+
+            <label for="Fortid">Fortnite</label>
+            <input type="checkbox" name="Fortnite" id="Fortid">
+
+            <label for="Freeid">Free Fire</label>
+            <input type="checkbox" name="FreeF" id="Freeid">
+
+            <label for="FallGid">Fall Guys</label>
+            <input type="checkbox" name="FallG" id="FallGid">
+
+            <label for="Counterid">Counter Strike</label>
+            <input type="checkbox" name="CounterS" id="Counterid">
+
+            <label for="RocketLid">Rocket League</label>
+            <input type="checkbox" name="RocketL" id="RocketLid">
+
+            <label for="TEWid">The Evil Within</label>
+            <input type="checkbox" name="TEW" id="TEWid">
+
+            <label for="PZid">Project Zomboid</label>
+            <input type="checkbox" name="PZ" id="PZid">
+
+            <label for="ERid">Elden Ring</label>
+            <input type="checkbox" name="ER" id="ERid">
+
+            <label for="Otroid">Otros</label>
+            <input type="checkboxs" name="Otros" id="Otroid">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

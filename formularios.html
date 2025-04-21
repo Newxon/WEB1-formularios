@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularioej</title>
+</head>
+<body>
+    
+    <h1>Formularios</h1>
+
+    <form action="index.js" method="post">
+        <!-- Agrupamiento de datos -->
+         <fieldset>
+            <legend>Datos Personales</legend>
+        <label for="Nombreid">Nombre</label>
+        <!--Ingresar Datos-->
+        <input type="text" name="Nombre" id="Nombreid">
+
+        <label for="Apellidoid">Apellido</label>
+        <input type="text" name="Apellido" id="Apellidoid">
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos</legend>
+            <label for="">Comidas</label>
+        </fieldset>
+
+        <label for="Emailid">Email</label>
+        <input type="email" name="Email" id="Emailid">
+
+        <label for="Passwordid">Contraseña</label>
+        <input type="password" name="Contraseña" id="Passwordid">
+        <!-- Cuando un dato es obligatorio: required -->
+        <label for="Edadid">Edad</label>
+        <input type="number" name="Edad" id="Edadid" min="0" max="120" required>
+        
+        <!--Ingreso de mucho texto-->
+        <label for="Mensaje">Ingrese un mensaje</label>
+        <textarea name="Mensaje" id="Mensajeid" cols="40" rows="10"></textarea>
+        
+        <!--Lista de opciones-->
+        <label for="Escuderia">Escuderías</label>
+        <select name="Escuderia" id="Escuderia">
+            <option value="">Elegir...</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="McLaren">MacLaren</option>
+            <option value="Hass">Hass</option>
+        </select>
+<fieldset>
+        <!--Radio -->
+        <label for="riverid">River</label>
+        <input type="radio" name="Equipo" value="River" id="riverid">
+
+        <label for="estuid">Estudiantes</label>
+        <input type="radio" name="Equipo" value="Estudiantes" id="estuid">
+        </fieldset>
+        <!--Submit-->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>
+        1)¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? a) method <u>b) action</u> c) target d) url <br>
+        2)¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada? a) data-type b) input-type <u>c) type</u> d) data <br>
+        3)¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico? a) text <u>b) email</u> c) mail d) input <br>
+        4)¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un formulario? a) description>b) info c) placeholder <u>d) label </u> <br>
+        5)¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario? <u>a) input type="submit"</u> b) button type="submit" c) btn d) submit <br>
+        6)¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un formulario? <u>a) required</u> b) mandatory c) validate d) mandatoryfield <br>
+        7)¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario? a) list b) dropdown <u>c) select</u> d) put type="list" <br>
+        8)¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? <u>a)</u> text b) email c) mail d) input <br>
+        9)¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario? <u>a) value</u> b) default c) preset d) initial <br>
+        10) Los metodos/verbos de petición HTTP son acciones que se desean llevar a cabo para un recurso determinado, cada uno con su propio significado, unos ejemplos pueden ser: <br> <br> POST: este metodo se utiliza para enviarle una "entidad" a un recurso especifíco,sin embargo, este metodo puede causar efectos secundarios en el servidor. <br> GET: este metodo pide la representación de un recurso, solo recuperando datos.
+        11) Los códigos de estado de respuesta de HTTP verifican si se ha completado una petición HTTP específica, agrupandose en cinco clases: <br>
+    </p>
+
+    <table>
+        <tr>
+            <td>Clases</td>
+            <td>Códigos</td>
+        </tr>
+
+        <tr>
+            <td>1.Respuestas Informativas</td>
+            <td>(100-199)</td>
+        </tr>
+
+        <tr>
+            <td>2.Respuestas satisfactorias</td>
+            <td>(200-299)</td>
+        </tr>
+
+        <tr>
+            <td>3.Redirecciones</td>
+            <td>(300-399)</td>
+        </tr>
+
+        <tr>
+            <td>4.Errores de los clientes</td>
+            <td>(400-499)</td>
+        </tr>
+
+        <tr>
+            <td>5.Errores de los servidores</td>
+            <td>(500-599)</td>
+        </tr>
+    </table>
+</body>
+</html>
