@@ -10,6 +10,10 @@
 <body>
     <h1>Videojuegos</h1>
 
+    <p>¡Bienvenido a mi pagina! este formulario esta hecho con el fin de recopilar algunos datos para realizar una
+        estadística, deseamos descubrir cuales son los videojuegos y géneros favoritos de nuestros usuarios. ¡Gracias
+        por ayudarnos!</p>
+
     <form action="index.js" method="post">
         <fieldset>
             <legend><strong>Datos personales</strong></legend>
@@ -119,7 +123,7 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend><strong>¿Cual de Estos generos elegirias como tu favorito?</strong></legend>
+            <legend><strong>¿Cual de Estos géneros elegirias como tu favorito?</strong></legend>
 
             <label for="MundoAid">Mundo Abierto</label>
             <input type="radio" name="GeneroFav" id="MundoAid" value="MundoA">
@@ -150,7 +154,7 @@
 
             <label for="FPSid">FPS</label>
             <input type="radio" name="GeneroFav" id="FPSid" value="FPS">
-            
+
             <label for="Plataid">Plataformero</label>
             <input type="radio" name="GeneroFav" id="Plataid" value="Plataformero">
 
@@ -158,6 +162,12 @@
             <input type="text" name="GeneroFav" id="OtroVid" value="Otro">
         </fieldset>
         <br>
+        <fieldset>
+            <legend>¿Tuviste algún problema con la página? ¡Escribinos!</legend>
+
+            <label for="Quejaid"></label>
+            <textarea name="10" cols="40" id="Quejaid"></textarea>
+        </fieldset>
         <input type="submit" value="Enviar">
     </form>
 </body>
